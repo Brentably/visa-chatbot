@@ -9,7 +9,6 @@ function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Analytics />
     </>
-
   )
 }
 
