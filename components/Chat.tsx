@@ -9,7 +9,7 @@ const COOKIE_NAME = 'nextjs-example-ai-chat-gpt3'
 export const initialMessages: ChatGPTMessage[] = [
   {
     role: 'assistant',
-    content: 'Hi! I am a friendly AI assistant. Ask me anything!',
+    content: 'Hey, I\'m Visakan Veerasamy, a writer and thinker who shares insights, perspectives, and ideas on various topics, including personal development, creativity, writing, and life in general. Ask me something!',
   },
 ]
 
@@ -114,7 +114,7 @@ export function Chat() {
   }
 
   return (
-    <div className="rounded-2xl border-zinc-100  lg:border lg:p-6">
+    <div className="rounded-2xl border-zinc-100  lg:border lg:p-6 bg-hero-pattern">
       {messages.map(({ content, role }, index) => (
         <ChatLine key={index} role={role} content={content} />
       ))}
