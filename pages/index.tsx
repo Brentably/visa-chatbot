@@ -13,7 +13,7 @@ function Home() {
       </section> */}
 
 
-        <Text variant="h2">Little Visa:</Text>
+        <Text variant="h2">Little Visa :</Text>
         <div className="">
           <Chat />
         </div>
