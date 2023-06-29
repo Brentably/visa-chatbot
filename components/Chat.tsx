@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { Button } from './Button'
 import { type ChatGPTMessage, ChatLine, LoadingChatLine } from './ChatLine'
 import { useCookies } from 'react-cookie'
@@ -114,7 +115,9 @@ export function Chat() {
   }
 
   return (
-    <div className="rounded-2xl border-zinc-100  lg:border lg:p-6 bg-hero-pattern">
+    <div className="rounded-2xl border-zinc-100 relative lg:border lg:p-6 overflow-clip"
+    >
+      <Image src='/images/visa.jpg' alt='' width={300} height={300} className='-z-50 rounded-full absolute left-1/2 -translate-x-1/2 opacity-30 top-1/2 -translate-y-1/2' />
       {messages.map(({ content, role }, index) => (
         <ChatLine key={index} role={role} content={content} />
       ))}
