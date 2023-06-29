@@ -37,6 +37,9 @@ const handler = async (req: Request): Promise<Response> => {
       
       Just give me the search term and nothing else. No other words or phrases. Do not answer in a complete sentence.
       Examples: "Love life advice", "death and moving on", "finding joy and happiness"
+
+      Do not mention Visakan Veerasamy in your response.
+      Instead of "Visakan Veerasamy insights on personal development" return "personal development"
       `}],
       max_tokens: 10,
       n: 1 // would be cool to mess with this later
