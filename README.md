@@ -10,6 +10,8 @@ This example shows how to implement a simple chat bot using Next.js, API Routes,
 
 ## How to Use
 
+
+
 You can choose from one of the following two methods to use this repository:
 
 ### One-Click Deploy
